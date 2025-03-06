@@ -1,12 +1,19 @@
 {
   "name": "node-js-ts",
+  "type": "module",
   "scripts": {
-    "format": "prettier --ignore-uknown --write .",
-    "prepare": "husky"
+    "format": "prettier --ignore-unknown --write .",
+    "prepare": "husky && husky install",
+    "build": "tsc -outDir dist",
+    "lint": "eslint --fix ."
   },
   "devDependencies": {
-    "husky": "^9.1.7",
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "husky": "^8.0.0",
     "lint-staged": "^15.4.3",
-    "prettier": "^3.5.3"
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0"
   }
 }
