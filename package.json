@@ -1,0 +1,12 @@
+{
+  "name": "node-js-ts",
+  "scripts": {
+    "format": "prettier --ignore-uknown --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.3"
+  }
+}
